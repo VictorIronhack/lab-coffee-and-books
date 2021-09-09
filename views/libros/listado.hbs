@@ -1,0 +1,23 @@
+
+<div class="container">
+    <h1>Listado de librerías y cafeterías</h1>
+    <hr>
+
+    {{#each places}}
+
+    <p>
+        {{name}} | {{type}} 
+        <small>- {{#each name}}
+             {{lastName}}
+            - {{/each}}
+            <a href="/libros/eliminado?places_id={{id}}" class="btn btn-info">Eliminar</a>
+            <a href="/libros/editar?places_id={{id}}" class="btn btn-info">Editar</a>
+        </small>
+    </p>
+
+    <hr style="opacity: .5;">
+
+    {{/each}}
+
+    <a href="/" class="btn btn-info">Volver</a>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <h1>Crear nuevo café o libro</h1>
+
+    <hr>
+
+    <form method="POST" action="/libros/crear">
+
+        <label>Nombre
+            <input name="name" type="text">
+        </label>
+        <br><br>
+        
+        <select name="type" class="form-select" aria-label="Default select example">
+        <option>Tipo</option>
+        <option value="coffee shop">Coffee shop</option>
+        <option value="bookstore">Bookstore</option>
+        </select>
+        <br><br>
+        
+        <label>Latitud
+            <input name="lat" type="text">
+        </label>
+        <br><br>
+
+        <label>Longitud
+            <input name="lng" type="text">
+        </label>
+        <br><br>
+
+        <input type="submit" value="Crear">
+
+    </form>
+
+</div>
